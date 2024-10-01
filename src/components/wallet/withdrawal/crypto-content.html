@@ -1,0 +1,150 @@
+<div class="section">
+  <div class="section-content">
+    <div class="withdrawal-page__content__bank-account">
+      <div class="d-flex gap-2 mb-5">
+        <div>
+          <img src="assets/images/wallet/crypto-option/1.svg">
+        </div>
+        <div>
+          <div class="withdrawal-page__content__bank-account__label mb-1">USDT - TRC20</div>
+          <div data-i18n="Withdrawl_Crypto_description"></div>
+        </div>
+      </div>
+      <div class="list-title">
+        <div class="" data-i18n="Virtual_Market_Account"></div>
+        <a class="" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#addBankCryptoModal" >
+          <img src="assets/images/new-icons/USDT_2.png" />
+          <div data-i18n="Tian_manages_virtual_currency_account"></div>
+        </a>
+      </div>
+      <div class="withdrawal-page__content__bank-account__container row cryto-select-bank custom-scrollbar">
+        <!-- <div class="col-7 mb-3">
+          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#addBankCryptoModal" class="withdrawal-page__content__bank-account__container__item flex-row">
+            <div class="withdrawal-page__content__bank-account__container__item__img add">
+              <img src="assets/icons/plus.svg" />
+            </div>
+            <div class="withdrawal-page__content__bank-account__container__item__text" data-i18n="add_wallet_address"></div>
+          </a>
+        </div> -->
+        <div class="col-3 mb-3 cryto-select-bank__item">
+          <label class="cryto-select-bank__item__label flex-row">
+            <div class="cryto-select-bank__item__label__img">
+              <img src="assets/images/new-icons/usdt.png" />
+            </div>
+            <div class="cryto-select-bank__item__label__title">
+              <div>LeeChunKit</div>
+              <div>TRC20</div>
+              <div>TEGi **** **** uJDC</div>
+            </div>
+            <input class="cryto-select-bank__item__label__checkbox" type="radio" name="bankAccount"/>
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="col-3 mb-3 cryto-select-bank__item">
+          <label class="cryto-select-bank__item__label flex-row">
+            <div class="cryto-select-bank__item__label__img">
+              <img src="assets/images/new-icons/usdt.png" />
+            </div>
+            <div class="cryto-select-bank__item__label__title">
+              <div>LeeChunKit</div>
+              <div>TRC20</div>
+              <div>TEGi **** **** uJDC</div>
+            </div>
+            <input class="cryto-select-bank__item__label__checkbox" type="radio" name="bankAccount" checked="checked"/>
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="col-3 mb-3 cryto-select-bank__item">
+          <label class="cryto-select-bank__item__label flex-row">
+            <div class="cryto-select-bank__item__label__img">
+              <img src="assets/images/new-icons/usdt.png" />
+            </div>
+            <div class="cryto-select-bank__item__label__title">
+              <div>LeeChunKit</div>
+              <div>TRC20</div>
+              <div>TEGi **** **** uJDC</div>
+            </div>
+            <input class="cryto-select-bank__item__label__checkbox" type="radio" name="bankAccount"/>
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="col-3 mb-3 cryto-select-bank__item">
+          <label class="cryto-select-bank__item__label flex-row">
+            <div class="cryto-select-bank__item__label__img">
+              <img src="assets/images/new-icons/usdt.png" />
+            </div>
+            <div class="cryto-select-bank__item__label__title">
+              <div>LeeChunKit</div>
+              <div>TRC20</div>
+              <div>TEGi **** **** uJDC</div>
+            </div>
+            <input class="cryto-select-bank__item__label__checkbox" type="radio" name="bankAccount"/>
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="col-3 mb-3 cryto-select-bank__item">
+          <label class="cryto-select-bank__item__label flex-row">
+            <div class="cryto-select-bank__item__label__img">
+              <img src="assets/images/new-icons/usdt.png" />
+            </div>
+            <div class="cryto-select-bank__item__label__title">
+              <div>LeeChunKit</div>
+              <div>TRC20</div>
+              <div>TEGi **** **** uJDC</div>
+            </div>
+            <input class="cryto-select-bank__item__label__checkbox" type="radio" name="bankAccount"/>
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="section">
+  <div class="section-content">
+    <div class="withdrawal-amount-info">
+      <div class="label" data-i18n="Withdrawal_amount"></div>
+      <div class="items">
+        <div class="item">
+          <div data-i18n="Number_of_withdrawals_available_today"></div>
+          <span>20</span>
+        </div>
+        <div class="item" >
+          <div data-i18n="Available_amount_today"></div>
+          <span><strong data-i18n="CURRENCY_KEY"></strong> 1,000,000</span>
+        </div>
+        <div class="item" >
+          <div data-i18n="Maximum_amount_for_single_withdrawal"></div>
+          <span><strong data-i18n="CURRENCY_KEY"></strong> 300,000</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="withdrawal-page__content__input row flex-column">
+      <div class="col-6 mb-3">
+        <div class="input-group">
+          <input type="number" class="form-control" id="withdrawal-input" data-i18n="wallet_page.withdrawal.Please_enter_withdrawal_amount" data-i18n-attr="placeholder"  />
+          <span class="input-group-text px-2 left">MYR</span>
+          <span class="input-group-text px-2 text-primary right withdrawal-max-value"><span data-i18n="wallet_page.withdrawal.Max">Max</span></span>
+        </div>
+        <div id="withdrawal-amount-input-label" class="text-danger mt-1" style="font-size: 11px; margin-left: 60px;"  data-i18n="Min_Max_Limit"></div>
+      </div>
+      <div class="col-6">
+        <div class="input-group">
+          <input type="number" class="form-control" id="withdrawal-input" data-i18n="wallet_page.withdrawal.Please_enter_withdrawal_amount" data-i18n-attr="placeholder"  />
+          <span class="input-group-text px-2 left">USDT</span>
+          <span class="input-group-text px-2 text-primary right withdrawal-max-value"><span data-i18n="wallet_page.withdrawal.Max">Max</span></span>
+        </div>
+        <div id="withdrawal-amount-input-label" class="text-danger mt-1" style="font-size: 11px; margin-left: 60px;"  data-i18n="Min_Max_Limit"></div>
+      </div>
+    </div>
+    
+    <div class="withdrawal-page__content__submit">
+      <button class="btn btn-primary withdrawal-submit" disabled data-bs-toggle="modal" data-bs-target="#withdrawalSuccessModal" data-i18n="SUBMIT"></button>
+    </div>
+  </div>
+</div>
+
+
+@@include('../../modal/delete-crypto-wallet-address-modal.html')

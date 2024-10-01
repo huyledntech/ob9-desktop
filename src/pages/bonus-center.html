@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Bonus Ccenter'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main account-layout deposit-page bonus-center-page ">
+      @@include('../components/base/navbar.html', {active: 1})
+
+      <div class="account-layout__container container">
+        <div class="row account-layout__container__content">
+          <div class="col-3 account-layout__container__content__left">
+            @@include('../components/base/profile-navbar.html', {active: 5})
+          </div>
+          <div class="col-9 account-layout__container__content__right">
+
+            <div class="account-layout__container__content__right__content bonus-center-page__content">
+
+              <div class="__title">
+                <span class="title" data-i18n="BONUS_CENTER"></span>
+              </div>
+
+              <div class="deposit-page__content__tab">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="cash-rebate-tab" data-bs-toggle="tab" data-bs-target="#cash-rebate" type="button" role="tab" aria-controls="cash-rebate" aria-selected="true">
+                      <span data-i18n="CASH_REBATE"></span>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="vip-angpow-tab" data-bs-toggle="tab" data-bs-target="#vip-angpow" type="button" role="tab" aria-controls="vip-angpow" aria-selected="false">
+                      <span data-i18n="VIP_ANGPOW"></span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="cash-rebate" role="tabpanel" aria-labelledby="cash-rebate-tab">
+                    @@include('../components/wallet/bonus-center/cash-rebate.html')
+                  </div>
+                  <div class="tab-pane fade" id="vip-angpow" role="tabpanel" aria-labelledby="vip-angpow-tab">
+                    @@include('../components/wallet/bonus-center/vip-angpow.html')
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- MODAL -->
+      @@include('../components/claim-success-modal.html')
+      <!-- MODAL -->
+      
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

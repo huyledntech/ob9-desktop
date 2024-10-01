@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'E-Sports', metaContent: './meta/e-sports.html'})
+  <body>
+    <!-- Content -->
+    <section class="main e-sports-page">
+      @@include('../components/base/navbar-without-login.html', {active: 6})
+
+
+      @@include('../components/e-sports-content.html')
+      
+
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+
+    @@include('../components/base/footer-info.html', { contentInfo: './footer-info/e-sports.html'})
+    @@include('../components/base/footer.html')
+
+  </body>
+</html>

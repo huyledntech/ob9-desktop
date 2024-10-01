@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Withdrawal'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main account-layout withdrawal-page">
+      @@include('../components/base/navbar.html', {active: 1})
+
+      <div class="account-layout__container container">
+        <div class="row account-layout__container__content">
+          <div class="col-3 account-layout__container__content__left">
+            @@include('../components/base/profile-navbar.html', {active: 4, activeBalance: 2})
+          </div>
+          <div class="col-9 account-layout__container__content__right">
+
+            <div class="account-layout__container__content__right__content withdrawal-page__content  has-section">
+              
+              <div class="withdrawal-page__content__title has-section-title">
+                <div class="pb-4">
+                  <span class="title" data-i18n="withdrawal_page.WITHDRAWAL"></span>
+                  <span class="subtitle" data-i18n="withdrawal_page.title"></span>
+                </div>
+              </div>
+
+
+              <div class="has-section-title pb-4">
+                <div class="withdrawal-page__content__main-wallet row">
+                  <div class="col-6">
+                    <div class="withdrawal-page__content__main-wallet__item">
+                      <div>
+                        <div class="withdrawal-page__content__main-wallet__item__title" data-i18n="Main_Wallet"></div>
+                        <div class="withdrawal-page__content__main-wallet__item__currency">
+                          <span>MYR 5888.20</span>
+                        </div>
+                      </div>
+                      <div class="withdrawal-page__content__main-wallet__item__img">
+                        <img class="refresh-balance" role="button" src="assets/images/new-icons/refresh.png" />
+                        <span data-i18n="Key_Recovery"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="tabs border-radius-bottom">
+                  <ul class="nav nav-pills py-4 gap-3 px-4" id="withdrawlTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="btn btn-secondary btn-lg text-uppercase active" id="pills-bank-account-tab" data-bs-toggle="pill" data-bs-target="#pills-bank-account" type="button" role="tab" aria-controls="pills-bank-account" aria-selected="true" data-i18n="Bank_Account"></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="btn btn-secondary btn-lg text-uppercase" id="pills-crypto-tab" data-bs-toggle="pill" data-bs-target="#pills-crypto" type="button" role="tab" aria-controls="pills-crypto" aria-selected="false" data-i18n="Crypto"></button>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="tab-content" id="withdrawlTabContent">
+                  <div class="tab-pane fade show active" id="pills-bank-account" role="tabpanel" aria-labelledby="pills-bank-account-tab">
+                    <!-- bank account content -->
+                    <div class="section">
+                      <div class="section-content">
+                        <div class="withdrawal-page__content__bank-account">
+                          <!-- <div class="withdrawal-page__content__bank-account__label" data-i18n="Bank_Account"></div> -->
+                          <div class="withdrawal-page__content__bank-account__container row">
+                            <div class="col-2">
+                              <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#addBankModal" class="withdrawal-page__content__bank-account__container__item">
+                                <div class="withdrawal-page__content__bank-account__container__item__img add">
+                                  <img src="assets/icons/plus.svg" />
+                                </div>
+                                <div class="withdrawal-page__content__bank-account__container__item__text" data-i18n="withdrawal_page.Add_Bank_Account"></div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+      
+                    <div class="section">
+                      <div class="section-content">
+                        @@include('../components/wallet/withdrawal/bank-account-withdrawal.html')
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="tab-pane fade" id="pills-crypto" role="tabpanel" aria-labelledby="pills-crypto-tab">
+                    <!-- crypto content -->
+                    @@include('../components/wallet/withdrawal/crypto-content.html')
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- MODAL -->
+      @@include('../components/wallet/withdrawal/add-bank-modal.html')
+      @@include('../components/wallet/withdrawal/add-bank-crypto-modal.html')
+      @@include('../components/wallet/withdrawal-success-modal.html')
+      
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

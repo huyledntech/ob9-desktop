@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Fishing', metaContent: './meta/fishing.html'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main fishing-page">
+      @@include('../components/base/navbar.html', {active: 5})
+
+      @@include('../components/fishing-content.html')
+
+      
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+    
+    @@include('../components/base/footer-info.html', { contentInfo: './footer-info/fishing.html'})
+    @@include('../components/base/footer.html')
+
+  </body>
+</html>

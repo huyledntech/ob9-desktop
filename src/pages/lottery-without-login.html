@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Lottery', metaContent: './meta/lottery.html'})
+  <body>
+    <!-- Content -->
+    <section class="main lottery-page">
+      @@include('../components/base/navbar-without-login.html', {active: 7})
+      
+      
+      @@include('../components/lottery-content.html')
+      
+
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+
+    @@include('../components/base/footer-info.html', { contentInfo: './footer-info/lottery.html'})
+    @@include('../components/base/footer.html')
+  </body>
+</html>

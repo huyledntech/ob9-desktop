@@ -1,0 +1,293 @@
+.e-sports-page {
+  padding-bottom: 0;
+  padding-top: 0;
+  min-height: auto;
+  background-color: #f0f6ff;
+}
+.e-sports-page__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+.e-sports-page__container #carouselESports .carousel-indicators-container {
+  position: absolute;
+  top: 0;
+  bottom: 90px;
+  left: 0;
+  right: 0;
+  display: flex;
+  place-items: center;
+  place-content: flex-end;
+}
+.e-sports-page__container #carouselESports .carousel-indicators-container .playnow {
+  margin-top: 50px;
+  background-image: url(../images/HOMEPAGE/exciting-game-bg-active.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.e-sports-page__container #carouselESports .carousel-indicators-container .playnow:hover {
+  opacity: 0.8;
+}
+.e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators {
+  margin: 0;
+  flex-direction: column;
+  right: 0;
+  left: 0;
+  top: auto;
+  bottom: 0;
+}
+.e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button {
+  width: auto;
+  height: auto;
+  text-indent: initial;
+  margin: 0;
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  min-width: 75px;
+  min-height: 75px;
+  background-image: url(../images/PAGE/SPORTS/action.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  opacity: 1;
+  font-family: "Aldo the Apache";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 26px;
+  text-align: center;
+  color: #597EF7;
+  transition: all 0.2s;
+}
+.e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button img {
+  max-width: 70px;
+}
+.e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button .img-active {
+  display: none;
+}
+.e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button span {
+  transform: matrix(1, -0.08, 0.02, 1, 0, 0);
+}
+.e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button:hover {
+  opacity: 0.8;
+}
+.e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button:hover {
+  -webkit-animation: categoryBtn 0.3s;
+  animation: categoryBtn 0.3s;
+}
+.e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button:hover, .e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button.active {
+  background-image: url(../images/PAGE/SPORTS/action-active.png);
+  color: #FFFFFF;
+}
+.e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button:hover .img-active, .e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button.active .img-active {
+  display: initial;
+}
+.e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button:hover .img-default, .e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button.active .img-default {
+  display: none;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .left-img {
+  background-color: #f0f6ff;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .left-img .bg {
+  position: absolute;
+  max-width: 80px;
+  max-height: 80px;
+  -webkit-animation: l3oCdoqhFLEpRFya3pzN8w__ 1s forwards, __6HxeipID46oR2suwcDIqeg__ 5s 1s infinite;
+  animation: l3oCdoqhFLEpRFya3pzN8w__ 1s forwards, __6HxeipID46oR2suwcDIqeg__ 5s 1s infinite;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .left-img .bg.bg1 {
+  left: 40px;
+  top: 35%;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .left-img .bg.bg2 {
+  right: 60px;
+  top: 30%;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .left-img .bg.bg3 {
+  left: 60px;
+  top: 20%;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .left-img .bg.bg4 {
+  right: 60px;
+  top: 25%;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .left-img .bg.bg5 {
+  left: 40px;
+  top: 30%;
+  max-width: 100px;
+  max-height: 100px;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .left-img .bg.bg6 {
+  right: 60px;
+  top: 30%;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .left-img .bg.bg7 {
+  left: 40px;
+  top: 30%;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .left-img .bg.bg8 {
+  right: 60px;
+  top: 25%;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .left-img .team {
+  max-height: 800px;
+  object-fit: contain;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .content .logo {
+  height: 130px;
+  object-fit: contain;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .content .official {
+  max-width: 170px;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .content .text {
+  line-height: 24px;
+  font-size: 16px;
+  color: #7981a4;
+  font-weight: 400;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item.active .left-img .team, .e-sports-page__container #carouselESports .carousel-inner .carousel-item.carousel-item-next.carousel-item-start .left-img .team, .e-sports-page__container #carouselESports .carousel-inner .carousel-item.carousel-item-prev.carousel-item-end .left-img .team {
+  -webkit-animation: esportLeftImgTeam 1s;
+  animation: esportLeftImgTeam 1s;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item.active .content, .e-sports-page__container #carouselESports .carousel-inner .carousel-item.carousel-item-next.carousel-item-start .content, .e-sports-page__container #carouselESports .carousel-inner .carousel-item.carousel-item-prev.carousel-item-end .content {
+  -webkit-animation: esportContent 1s;
+  animation: esportContent 1s;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item.active.carousel-item-start .left-img .team, .e-sports-page__container #carouselESports .carousel-inner .carousel-item.active.carousel-item-end .left-img .team {
+  -webkit-animation: esportLeftImgTeamOut 1s;
+  animation: esportLeftImgTeamOut 1s;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item.active.carousel-item-start .content, .e-sports-page__container #carouselESports .carousel-inner .carousel-item.active.carousel-item-end .content {
+  -webkit-animation: esportContentOut 1s;
+  animation: esportContentOut 1s;
+}
+
+@-webkit-keyframes esportContent {
+  from {
+    -webkit-transform: translate(50%, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes esportContent {
+  from {
+    transform: translate(50%, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes esportContentOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes esportContentOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes esportLeftImgTeam {
+  from {
+    -webkit-transform: scale(0.5);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes esportLeftImgTeam {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes esportLeftImgTeamOut {
+  from {
+    -webkit-transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.5);
+  }
+}
+@keyframes esportLeftImgTeamOut {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.5);
+  }
+}
+@keyframes l3oCdoqhFLEpRFya3pzN8w__ {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateX(-20deg);
+    transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+}
+@keyframes __6HxeipID46oR2suwcDIqeg__ {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}

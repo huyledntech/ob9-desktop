@@ -1,0 +1,402 @@
+.live-casino-page {
+  // background-image: url(../images/live-casino/bg.png);
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+  padding-bottom: 0;
+  padding-top: 0;
+  background-color: #f0f6ff;
+  // margin-top: 35px;
+  min-height: 700px;
+
+
+  &__container {
+    // background-image: url(../images/sports/bg-center.png);
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
+    // min-height: 100vh;
+    // min-height: 800px;
+    // min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+
+    #carouselLiveCasino {
+      // min-height: 800px;
+
+      .carousel-indicators-container {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        place-items: center;
+        place-content: flex-end;
+
+        .playnow {
+          margin-top: 50px;
+          background-image: url(../images/HOMEPAGE/exciting-game-bg-active.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          width: 150px;
+          height: 50px;
+          display: flex;
+          place-content: center;
+          place-items: center;
+
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 20px;
+          text-align: center;
+          color: #FFFFFF;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+
+        .carousel-indicators {
+          margin: 0;
+          flex-direction: column;
+          right: 0;
+          left: 0;
+          top: auto;
+          bottom: 90px;
+
+          .action {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            background-color: #f0f6ff;
+
+            button {
+              width: auto;
+              height: auto;
+              text-indent: initial;
+              margin: 0;
+              position: relative;
+              display: flex;
+              place-content: center;
+              place-items: center;
+              min-width: 75px;
+              min-height: 75px;
+              background-image: url(../images/PAGE/SPORTS/action.png);
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: center;
+              background-color: transparent;
+              border: none;
+              opacity: 1;
+
+              font-family: 'Aldo the Apache';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 30px;
+              line-height: 26px;
+              text-align: center;
+              color: #597EF7;
+              transition: all 0.2s;
+
+              img {
+                max-width: 70px;
+              }
+
+              .img-active {
+                display: none;
+              }
+
+              span {
+                transform: matrix(1, -0.08, 0.02, 1, 0, 0);
+              }
+
+              &:hover {
+                opacity: 0.8;
+              }
+
+              &:hover {
+                -webkit-animation: categoryBtn 0.3s;
+                animation: categoryBtn 0.3s;
+              }
+
+              &:hover,
+              &.active {
+                background-image: url(../images/PAGE/SPORTS/action-active.png);
+                color: #FFFFFF;
+
+                .img-active {
+                  display: initial;
+                }
+
+                .img-default {
+                  display: none;
+                }
+              }
+            }
+          }
+
+        }
+      }
+
+      .carousel-inner {
+        .carousel-item {
+          & > .row {
+            background-color: #f0f6ff;
+          }
+          .left-img {
+            background-color: #f0f6ff;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            position: relative;
+
+            .team {
+              // 
+              max-height: 750px;
+              object-fit: contain;
+            }
+
+            .bg {
+              position: absolute;
+              max-width: 70px;
+              max-height: 70px;
+
+              -webkit-animation: l3oCdoqhFLEpRFya3pzN8w__ 1s forwards, __6HxeipID46oR2suwcDIqeg__ 5s 1s infinite;
+              animation: l3oCdoqhFLEpRFya3pzN8w__ 1s forwards, __6HxeipID46oR2suwcDIqeg__ 5s 1s infinite;
+
+              &.bg1 {
+                left: 50px;
+                top: 25%;
+              }
+
+              &.bg2 {
+                right: 60px;
+                top: 40%;
+              }
+            }
+          }
+
+          .content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 250px;
+            background-color: #f0f6ff;
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-left: 0;
+
+            .logo {
+              max-width: 400px;
+              height: 120px;
+              object-fit: contain;
+            }
+
+            .official {
+              max-width: 170px;
+            }
+
+            .icon {
+              max-width: 350px;
+            }
+
+            .text {
+              line-height: 24px;
+              font-size: 16px;
+              color: #7981a4;
+              font-weight: 400;
+            }
+          }
+
+          &.active,
+          &.carousel-item-next.carousel-item-start,
+          &.carousel-item-prev.carousel-item-end {
+
+            // show
+            .left-img {
+              .team {
+                -webkit-animation: casinoLeftImgTeam 1.5s;
+                animation: casinoLeftImgTeam 1.5s;
+              }
+            }
+
+            .content {
+              -webkit-animation: casinoContent 1s;
+              animation: casinoContent 1s;
+            }
+          }
+
+          &.active.carousel-item-start,
+          &.active.carousel-item-end {
+
+            // hide
+            .left-img {
+              .team {
+                -webkit-animation: casinoLeftImgTeamOut 1s;
+                animation: casinoLeftImgTeamOut 1s;
+              }
+            }
+
+            .content {
+              -webkit-animation: casinoContentOut 1s;
+              animation: casinoContentOut 1s;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+
+html[lang="zh"] {
+  .live-casino-page {
+
+    .carousel-inner {
+      .carousel-item {
+        &:nth-child(3) {
+          .sports-img {
+            img {
+              margin-left: 20% !important;
+            }
+          }
+        }
+      }
+    }
+
+    .sports-item__content__title {
+      word-break: keep-all !important;
+
+      &[data-i18n="live_casino_page.title3"] {
+        // font-size: 90px !important;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes casinoLeftImgTeam {
+  from {
+    -webkit-transform: translate(-30%, 0);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes casinoLeftImgTeam {
+  from {
+    transform: translate(-30%, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes casinoLeftImgTeamOut {
+  from {
+    -webkit-transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate(20%, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes casinoLeftImgTeamOut {
+  from {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate(20%, 0);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes casinoContent {
+  from {
+    -webkit-transform: translate(50%, 0);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes casinoContent {
+  from {
+    transform: translate(50%, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes casinoContentOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes casinoContentOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes l3oCdoqhFLEpRFya3pzN8w__ {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateX(-20deg);
+    transform: rotateX(-20deg);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+}
+
+@keyframes __6HxeipID46oR2suwcDIqeg__ {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  50% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}

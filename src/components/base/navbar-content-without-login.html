@@ -1,0 +1,61 @@
+<nav class="my-navbar__main navbar fixed-top navbar-expand-lg">
+  <div class="my-navbar__main__container container">
+    @@include('./navbar-content-left.html', {active: '@@active', withoutLogin: true})
+    <ul class="navbar-nav nav-right ms-auto">
+      <ul class="navbar-nav nav-right ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="javascript:void(0)">
+            <div class="nav-link-img">
+              <img class="default" src="assets/images/HOMEPAGE/cutomer-service.png" />
+              <img class="active" src="assets/images/HOMEPAGE/cutomer-service-active.png" />
+            </div>
+            <div data-i18n="navbar.Customer_Service"></div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sponsor-juventus.html">
+            <div class="nav-link-img">
+              <img class="default" src="assets/images/HOMEPAGE/SPONSOR.png" />
+              <img class="active" src="assets/images/HOMEPAGE/SPONSOR-active.png" />
+            </div>
+            <div data-i18n="navbar.Sponsor"></div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <!-- <a class="nav-link" href="/vip-detail.html"> -->
+          <a class="nav-link" href="/vip-privilege-details.html">
+            <div class="nav-link-img">
+              <img class="default" src="assets/images/HOMEPAGE/VIP.png" />
+              <img class="active" src="assets/images/HOMEPAGE/VIP-active.png" />
+            </div>
+            <div data-i18n="navbar.VIP"></div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/promotion.html">
+            <div class="nav-link-img">
+              <img class="default" src="assets/images/HOMEPAGE/PROMOTION.png" />
+              <img class="active" src="assets/images/HOMEPAGE/PROMOTION-active.png" />
+            </div>
+            <div data-i18n="navbar.Promotion"></div>
+          </a>
+        </li>
+        <li class="nav-item loginform ms-1">
+          <form class="nav-login-form">
+            <div class="input-group">
+              <input type="text" class="form-control" data-i18n="username" data-i18n-attr="placeholder" autocomplete="new-password" />
+            </div>
+            <div class="input-group">
+              <input type="password" class="form-control" data-i18n="password" data-i18n-attr="placeholder" autocomplete="new-password"/>
+              <span class="input-group-text">
+                <a href="/forget-password.html" data-i18n="top_menu.Forgot"></a>
+              </span>
+            </div>
+            <a role="button" href="/" class="btn-login-menu" data-i18n="login"></a>
+            <a role="button" href="/register.html" class="btn-register-menu" data-i18n="Join_now"></a>
+          </form>
+        </li>
+      </ul>
+    </ul>
+  </div>
+</nav>

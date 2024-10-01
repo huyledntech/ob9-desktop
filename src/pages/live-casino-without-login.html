@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Live Casino', metaContent: './meta/live-casino.html'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main live-casino-page">
+      @@include('../components/base/navbar-without-login.html', {active: 3})
+
+      @@include('../components/live-casino-content.html') 
+
+      
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+    
+    @@include('../components/base/footer-info.html', { contentInfo: './footer-info/live-casino.html'})
+    @@include('../components/base/footer.html')
+  </body>
+</html>

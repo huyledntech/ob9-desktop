@@ -1,0 +1,33 @@
+<!-- <div class="withdrawal-page__content__description" data-i18n="withdrawal_page.description"></div> -->
+<div class="withdrawal-amount-info">
+  <div class="label" data-i18n="Withdrawal_amount"></div>
+  <div class="items">
+    <div class="item">
+      <div data-i18n="Number_of_withdrawals_available_today"></div>
+      <span>20</span>
+    </div>
+    <div class="item" >
+      <div data-i18n="Available_amount_today"></div>
+      <span><strong data-i18n="CURRENCY_KEY"></strong> 1,000,000</span>
+    </div>
+    <div class="item" >
+      <div data-i18n="Maximum_amount_for_single_withdrawal"></div>
+      <span><strong data-i18n="CURRENCY_KEY"></strong> 300,000</span>
+    </div>
+  </div>
+</div>
+
+<div class="withdrawal-page__content__input row">
+  <div class="col-6">
+    <div class="input-group">
+      <input type="number" class="form-control" id="withdrawal-input" data-i18n="wallet_page.withdrawal.Please_enter_withdrawal_amount" data-i18n-attr="placeholder"  />
+      <span class="input-group-text px-2 left">MYR</span>
+      <span class="input-group-text px-2 text-primary right withdrawal-max-value"><span data-i18n="wallet_page.withdrawal.Max">Max</span></span>
+    </div>
+    <div id="withdrawal-amount-input-label" class="text-danger mt-1" style="font-size: 11px; margin-left: 60px;"  data-i18n="Min_Max_Limit"></div>
+  </div>
+</div>
+
+<div class="withdrawal-page__content__submit">
+  <button class="btn btn-primary withdrawal-submit" disabled data-bs-toggle="modal" data-bs-target="#withdrawalSuccessModal" data-i18n="SUBMIT"></button>
+</div>

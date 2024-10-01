@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Slots', metaContent: './meta/slots.html'})
+  <body>
+    <!-- Content -->
+    <section class="main slot-page">
+      @@include('../components/base/navbar.html', {active: 4})
+      
+      @@include('../components/slots-content.html')
+      
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+
+    @@include('../components/base/footer-info.html', { contentInfo: './footer-info/slots.html'})
+    @@include('../components/base/footer.html')
+
+  </body>
+</html>

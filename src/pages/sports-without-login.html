@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Home', metaContent: './meta/sports.html'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main sports-page">
+      @@include('../components/base/navbar-without-login.html', {active: 2})
+
+      @@include('../components/sports-content.html')
+
+      
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+    
+    @@include('../components/base/footer-info.html', { contentInfo: './footer-info/sports.html'})
+    @@include('../components/base/footer.html')
+  </body>
+</html>

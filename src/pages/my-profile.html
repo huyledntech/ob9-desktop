@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'My Profile'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main account-layout my-profile-page">
+      @@include('../components/base/navbar.html', {active: 1})
+
+      <div class="account-layout__container container">
+        <div class="row account-layout__container__content">
+          <div class="col-3 account-layout__container__content__left">
+            @@include('../components/base/profile-navbar.html', {active: 9})
+          </div>
+          <div class="col-9 account-layout__container__content__right">
+
+            <div class="account-layout__container__content__right__content my-profile-page__content has-section">
+
+              <div class="my-profile-page__content__title has-section-title" data-i18n="Personal_Profile"></div>
+
+              <div class="has-section-title tabs border-radius-bottom pb-4">
+                <div class="row my-profile-page__content__input">
+                  <label for="inputPassword" class="col-2 col-form-label" data-i18n="Full_Name"></label>
+                  <div class="col-6">
+                    <input type="text" class="form-control" value="TAN MING ZHI" disabled />
+                  </div>
+                </div>
+  
+                <div class="row my-profile-page__content__input">
+                  <label for="inputPassword" class="col-2 col-form-label" data-i18n="profile.Date_of_Birth"></label>
+                  <div class="col-6">
+                    <input type="date" class="form-control" value="11/07/1985" />
+                  </div>
+                </div>
+  
+                <div class="row my-profile-page__content__input">
+                  <label class="col-2"></label>
+                  <div class="col-6">
+                    <button class="btn btn-primary" data-i18n="Save"></button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section">
+                <div class="section-content">
+
+                  <div class="row">
+                    <div class="col-8">
+
+                      <div class="my-profile-page__content__title" data-i18n="Account_Security"></div>
+    
+                      <div class="my-profile-page__content__verify">
+                        <div>
+                          <img src="assets/images/new-icons/phone.png" class="me-1" width="35px" />
+                          <span data-i18n="phone_number"></span>:  012*******
+                        </div>
+                        <div class="input-group w-50">
+                          <input type="text" class="form-control" value="" data-i18n="OTP_verification" data-i18n-attr="placeholder" autocomplete="new-password" />
+                          <button class="btn btn-primary" type="button" data-i18n="Get_Code"></button>
+                        </div>
+                        <!-- <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#addBankModal" data-i18n="VERIFY"></button> -->
+                      </div>
+                      <div class="my-profile-page__content__verify">
+                        <div>
+                          <img src="assets/images/new-icons/email.png" class="me-1" width="35px" />
+                          <span data-i18n="Email"></span>:  tan********@gmail.com
+                        </div>
+                        <!-- <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#verifyEmailModal" data-i18n="VERIFY"></button> -->
+                      </div>
+                      <div class="my-profile-page__content__verify">
+                        <div>
+                          <img src="assets/images/new-icons/password.png" class="me-1" width="35px" />
+                          <span data-i18n="password"></span>:  **********
+                        </div>
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#changePasswordModal" data-i18n="CHANGE"></button>
+                      </div>
+
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- MODAL -->
+      @@include('../components/password-update-success-modal.html')
+      @@include('../components/change-password-modal.html')
+      @@include('../components/verify-email-modal.html')
+      @@include('../components/add-bank-modal.html')
+      <!-- MODAL -->
+      
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

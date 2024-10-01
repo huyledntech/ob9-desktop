@@ -1,0 +1,160 @@
+<nav class="my-navbar__main navbar fixed-top navbar-expand-lg">
+  <div class="my-navbar__main__container container px-0">
+    @@include('./navbar-content-left.html', {active: '@@active', withoutLogin: false})
+    <ul class="navbar-nav nav-right ms-auto">
+      <li class="nav-item">
+        <a class="nav-link active" href="javascript:void(0)">
+          <div class="nav-link-img">
+            <img class="default" src="assets/images/HOMEPAGE/cutomer-service.png" />
+            <img class="active" src="assets/images/HOMEPAGE/cutomer-service-active.png" />
+          </div>
+          <div data-i18n="navbar.Customer_Service"></div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/sponsor-juventus.html">
+          <div class="nav-link-img">
+            <img class="default" src="assets/images/HOMEPAGE/SPONSOR.png" />
+            <img class="active" src="assets/images/HOMEPAGE/SPONSOR-active.png" />
+          </div>
+          <div data-i18n="navbar.Sponsor"></div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <!-- <a class="nav-link" href="/vip-detail.html"> -->
+        <a class="nav-link" href="/vip-privilege-details.html">
+          <div class="nav-link-img">
+            <img class="default" src="assets/images/HOMEPAGE/VIP.png" />
+            <img class="active" src="assets/images/HOMEPAGE/VIP-active.png" />
+          </div>
+          <div data-i18n="navbar.VIP"></div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/promotion.html">
+          <div class="nav-link-img">
+            <img class="default" src="assets/images/HOMEPAGE/PROMOTION.png" />
+            <img class="active" src="assets/images/HOMEPAGE/PROMOTION-active.png" />
+          </div>
+          <div data-i18n="navbar.Promotion"></div>
+        </a>
+      </li>
+      <li class="nav-item ms-1">
+        <a class="nav-link" href="/promotion.html">
+          <div class="nav-link-img">
+            <img class="default" src="assets/images/LOGIN_EDI/deposit.png" />
+            <img class="active" src="assets/images/LOGIN_EDI/deposit_active.png" />
+          </div>
+          <div data-i18n="deposit"></div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/promotion.html">
+          <div class="nav-link-img">
+            <img class="default" src="assets/images/LOGIN_EDI/withdraw.png" />
+            <img class="active" src="assets/images/LOGIN_EDI/withdraw_active.png" />
+          </div>
+          <div data-i18n="withdraw"></div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/promotion.html">
+          <div class="nav-link-img">
+            <img class="default" src="assets/images/LOGIN_EDI/vip.png" />
+            <img class="active" src="assets/images/LOGIN_EDI/transfer_active.png" />
+          </div>
+          <div data-i18n="Rebate"></div>
+        </a>
+      </li>
+      <li class="nav-item dropdown profile ms-1">
+        <a class="nav-link dropdown-toggle" type="button" id="dropdownMenuProfile" data-bs-toggle="dropdown" aria-expanded="false">
+          <div class="name">
+            <div>
+              demon3216
+              <img src="assets/images/vip_menu/vip0.png" />
+            </div>
+            <div class="price"><strong data-i18n="CURRENCY_KEY"></strong> 0.00</div>
+          </div>
+          <div>
+            <img src="assets/images/profile/1.svg" />
+          </div>
+        </a>
+        <ul class="dropdown-menu show" aria-labelledby="dropdownMenuProfile">
+          <li>
+            <a class="dropdown-item" href="#">
+              <div class="img">
+                <img class="default" src="assets/images/menu/menu-1.png" />
+                <img class="active" src="assets/images/menu/menu-active-1.png" />
+              </div>
+              <div data-i18n="MENU.MENU1"></div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              <div class="img">
+                <img class="default" src="assets/images/menu/menu-2.png" />
+                <img class="active" src="assets/images/menu/menu-active-2.png" />
+              </div>
+              <div data-i18n="MENU.MENU2"></div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              <div class="img">
+                <img class="default" src="assets/images/menu/menu-3.png" />
+                <img class="active" src="assets/images/menu/menu-active-3.png" />
+              </div>
+              <div data-i18n="MENU.MENU3"></div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              <div class="img">
+                <img class="default" src="assets/images/menu/menu-4.png" />
+                <img class="active" src="assets/images/menu/menu-active-4.png" />
+              </div>
+              <div data-i18n="MENU.MENU4"></div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              <div class="img">
+                <img class="default" src="assets/images/menu/menu-5.png" />
+                <img class="active" src="assets/images/menu/menu-active-5.png" />
+              </div>
+              <div data-i18n="MENU.MENU5"></div>
+              <span class="count">61</span>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              <div class="img">
+                <img class="default" src="assets/images/menu/menu-6.png" />
+                <img class="active" src="assets/images/menu/menu-active-6.png" />
+              </div>
+              <div data-i18n="MENU.MENU6"></div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item button" href="#">
+              <div data-i18n="MENU.MENU7"></div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          href="javascript:void(0)"
+          data-bs-toggle="modal"
+          data-bs-target="#selectLanguage"
+        >
+          <div class="nav-link-img">
+            <img id="flagLanguage" src="assets/icons/navbar/language.png" />
+          </div>
+          <div id="countryNameLanguage" data-i18n="navbar.Malaysia"></div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Manage bank account (add bank)'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main account-layout manage-bank-account-page">
+      @@include('../components/base/navbar.html', {active: 1})
+      @@include('../components/modal/delete-bank-modal.html')
+
+      <div class="account-layout__container container">
+        <div class="row account-layout__container__content">
+          <div class="col-3 account-layout__container__content__left">
+            @@include('../components/base/profile-navbar.html', {active: 8})
+          </div>
+          <div class="col-9 account-layout__container__content__right">
+
+            <div class="account-layout__container__content__right__content manage-bank-account-page__content">
+
+              <div class=" manage-bank-account-page__content__title">
+                <div>
+                  <span class="title" data-i18n="manage_bank_account_page.MANAGE_BANK_ACCOUNT"></span>
+                  <span class="subtitle" data-i18n="manage_bank_account_page.title"></span>
+                </div>
+              </div>
+
+              <div>
+                <div class="tabs border-radius-bottom">
+                  <ul class="nav nav-pills pb-4 gap-3" id="withdrawlTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="btn btn-secondary btn-lg text-uppercase active" id="pills-bank-account-tab" data-bs-toggle="pill" data-bs-target="#pills-bank-account" type="button" role="tab" aria-controls="pills-bank-account" aria-selected="true" data-i18n="Bank_Account"></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="btn btn-secondary btn-lg text-uppercase" id="pills-crypto-tab" data-bs-toggle="pill" data-bs-target="#pills-crypto" type="button" role="tab" aria-controls="pills-crypto" aria-selected="false" data-i18n="Crypto"></button>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="tab-content" id="withdrawlTabContent">
+                  <div class="tab-pane fade show active" id="pills-bank-account" role="tabpanel" aria-labelledby="pills-bank-account-tab">
+                    @@include('../components/wallet/manage-bank-account/bank-account.html')
+                  </div>
+                  <div class="tab-pane fade" id="pills-crypto" role="tabpanel" aria-labelledby="pills-crypto-tab">
+                    @@include('../components/wallet/manage-bank-account/crypto-content.html')
+                  </div>
+                </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL -->
+      @@include('../components/wallet/manage-bank-account-modal.html')
+      <!-- MODAL -->
+      
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>
