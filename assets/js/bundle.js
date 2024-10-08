@@ -17,7 +17,8 @@ function getUrlVars() {
 const LANGUAGES = {
   EN: "en",
   ZH: "zh",
-  SG: "sg",
+  SG_EN: "sg_en",
+  SG_CH: "sg_ch",
 };
 
 var translator = new Translator({
@@ -39,12 +40,14 @@ const _get_language =
   localStorage.getItem(_get_translator_config) || LANGUAGES.EN;
 const _get_region = localStorage.getItem(PREFERED_REGION) || "Malaysia";
 
-translator.fetch([LANGUAGES.EN, LANGUAGES.ZH, LANGUAGES.SG]).then(() => {
-  // -> Translations are ready...
-  translator.translatePageTo(_get_language);
-  changeLanguageColor();
-  renderAfterHaveTranslator();
-});
+translator
+  .fetch([LANGUAGES.EN, LANGUAGES.ZH, LANGUAGES.SG_EN, LANGUAGES.SG_CH])
+  .then(() => {
+    // -> Translations are ready...
+    translator.translatePageTo(_get_language);
+    changeLanguageColor();
+    renderAfterHaveTranslator();
+  });
 
 /**
  * MENU SLIDE
@@ -385,11 +388,11 @@ $(".deposit-page .deposit-items__content input[name='crypto_channel']").change(
       ".deposit-page .deposit-items__content input[name='crypto_channel']:checked"
     ).val();
     if (current_value === "BONUSPAY") {
-      $("#bonuspay-content").removeClass('d-none');
-      $("#coinpayment-content").addClass('d-none');
+      $("#bonuspay-content").removeClass("d-none");
+      $("#coinpayment-content").addClass("d-none");
     } else {
-      $("#bonuspay-content").addClass('d-none');
-      $("#coinpayment-content").removeClass('d-none');
+      $("#bonuspay-content").addClass("d-none");
+      $("#coinpayment-content").removeClass("d-none");
     }
   }
 );
@@ -408,8 +411,8 @@ $(".deposit-page .deposit-items__content input[name='crypto_option']").change(
       ".deposit-page .deposit-items__content input[name='crypto_option']:checked"
     ).val();
 
-    if(!!current_value) {
-      $("#network-content").removeClass('d-none');
+    if (!!current_value) {
+      $("#network-content").removeClass("d-none");
     }
 
     if (current_value === "USDT") {
@@ -427,8 +430,8 @@ $(".deposit-page .deposit-items__content input[name='network_option']").change(
       ".deposit-page .deposit-items__content input[name='network_option']:checked"
     ).val();
 
-    if(!!current_value) {
-      $("#wallet-address-content").removeClass('d-none');
+    if (!!current_value) {
+      $("#wallet-address-content").removeClass("d-none");
     }
 
     if (current_value === "BEP 20") {
@@ -942,14 +945,25 @@ function euroFinalMatch() {
   });
 }
 
-
 window.onscroll = changeNavbar;
 
 function changeNavbar() {
-    var myNavbarMain = $(".my-navbar__main");
-    if (window.pageYOffset > 30) {
-      myNavbarMain.addClass('scrolled')
-    } else {
-      myNavbarMain.removeClass('scrolled')
-    }
+  var myNavbarMain = $(".my-navbar__main");
+  if (window.pageYOffset > 30) {
+    myNavbarMain.addClass("scrolled");
+  } else {
+    myNavbarMain.removeClass("scrolled");
+  }
 }
+
+$(".daily-mission-page .btn-claim").on("click", function () {
+  $(this).prop("disabled", true);
+});
+
+$(".spin-page .spin-top .arrow").on("click", function () {
+  const degree = Math.floor(3600 + Math.random() * 3600); // Random spins
+  $(".spin-page .spin-top .prize-spin").css({
+    transition: "transform 4s ease-out",
+    transform: "rotate(" + degree + "deg)",
+  });
+});

@@ -2035,7 +2035,7 @@
     "LOTTERY": "<img src=\"assets/images/MENU_BAR/LOTTERY/EN.png\" />",
     "": "",
     "": "",
-    "": ""  
+    "": ""
   },
   "HOMEPAGE": {
     "GAME_TITLE_1": "<img src=\"assets/images/HOMEPAGE/title_1_en.png\" />",
@@ -2064,7 +2064,7 @@
     "TOP_SERVICE_TITLE_4": "Three Platforms for Your Choice ",
     "": "",
     "": "",
-    "": ""  
+    "": ""
   },
   "SPORTSPAGE": {
     "OFFICIAL": "<img src=\"assets/images/PAGE/SPORTS/eng.png\" />",
@@ -2073,7 +2073,7 @@
     "DESCRIPTION_3": "Offering the most betting types and the strongest betting experience, our platform supports early cash-out options. Bet quickly and efficiently with features that cater to your preferences and passions.",
     "DESCRIPTION_4": "With over 50,000 events, our platform allows users to customize their bet amounts and odds. We offer advance betting and early settlement features, powered by a robust settlement engine that scans for available markets and odds in real-time, providing you with an exceptional betting experience.",
     "": "",
-    "": ""  
+    "": ""
   },
   "CASINOPAGE": {
     "OFFICIAL": "<img src=\"assets/images/PAGE/SPORTS/eng.png\" />",
@@ -2088,7 +2088,7 @@
     "DESCRIPTION_9": "With high-definition streaming and professional dealers, our platform ensures fairness and excitement. Discover the infinite possibilities of live gaming with Winfinity.",
     "": "",
     "": "",
-    "": ""  
+    "": ""
   },
   "ESPORTPAGE": {
     "OFFICIAL": "<img src=\"assets/images/PAGE/SPORTS/eng.png\" />",
@@ -2113,7 +2113,7 @@
     "MENU6": "Inbox",
     "MENU7": "Log Out",
     "": "",
-    "": ""  
+    "": ""
   },
   "Crypto_Channel": "Crypto Channel",
   "Withdrawal_amount": "Withdrawal amount",
@@ -2128,6 +2128,74 @@
   "demo": "Demo",
   "Save": "Save",
   "Daily_Mission": "Daily Mission",
+  "footer_partner": {
+    "1": "<img src=\"assets/images/new_footer/MY/saba_grey.png\" /><img class=\"active\" src=\"assets/images/new_footer/MY/saba.png\" />",
+    "2": "<img src=\"assets/images/new_footer/MY/cmd_grey.png\" /><img class=\"active\" src=\"assets/images/new_footer/MY/cmd368.png\" />",
+    "3": "<img src=\"assets/images/new_footer/MY/m8bet_grey.png\" /><img class=\"active\" src=\"assets/images/new_footer/MY/m8bet.png\" />",
+    "4": "<img src=\"assets/images/new_footer/MY/evo_grey.png\" /><img class=\"active\" src=\"assets/images/new_footer/MY/evo.png\" />",
+    "5": "<img src=\"assets/images/new_footer/MY/playtech_grey.png\" /><img class=\"active\" src=\"assets/images/new_footer/MY/playtech.png\" />",
+    "6": "<img src=\"assets/images/new_footer/MY/sexy_grey.png\" /><img class=\"active\" src=\"assets/images/new_footer/MY/sexy.png\" />",
+    "7": "<img src=\"assets/images/new_footer/MY/dg_grey.png\" /><img class=\"active\" src=\"assets/images/new_footer/MY/dg.png\" />",
+    "9": "<img src=\"assets/images/new_footer/MY/ezugi_grey.png\" /><img class=\"active\" src=\"assets/images/new_footer/MY/ezugi.png\" />",
+    "10": "<img src=\"assets/images/new_footer/MY/ag_grey.png\" /><img class=\"active\" src=\"assets/images/new_footer/MY/ag.png\" />",
+    "11": "<img src=\"assets/images/new_footer/MY/pp_grey.png\" /><img class=\"active\" src=\"assets/images/new_footer/MY/pp.png\" />",
+    "12": "<img src=\"assets/images/new_footer/MY/sa_grey.png\" /><img class=\"active\" src=\"assets/images/new_footer/MY/sa.png\" />",
+    "13": "<img src=\"assets/images/new_footer/MY/spade_grey.png\" /><img class=\"active\" src=\"assets/images/new_footer/MY/spade.png\" />",
+    "14": "<img src=\"assets/images/new_footer/MY/habanero_grey.png\" /><img class=\"active\" src=\"assets/images/new_footer/MY/habanero.png\" />",
+    "15": "<img src=\"assets/images/new_footer/MY/98play_grey.png\" /><img class=\"active\" src=\"assets/images/new_footer/MY/98play.png\" />",
+    "16": "<img src=\"assets/images/new_footer/MY/booming_grey.png\" /><img class=\"active\" src=\"assets/images/new_footer/MY/booming.png\" />",
+    "17": "<img src=\"assets/images/new_footer/MY/pegasus_grey.png\" /><img class=\"active\" src=\"assets/images/new_footer/MY/pegasus.png\" />",
+    "18": "<img src=\"assets/images/new_footer/MY/winfinity_grey.png\" /><img class=\"active\" src=\"assets/images/new_footer/MY/winfinity.png\" />",
+    "19": "<img src=\"assets/images/new_footer/MY/cq9_grey.png\" /><img class=\"active\" src=\"assets/images/new_footer/MY/cq9.png\" />",
+    "20": "<img src=\"assets/images/new_footer/MY/redtiger_grey.png\" /><img class=\"active\" src=\"assets/images/new_footer/MY/redtiger.png\" />",
+    "21": "<img src=\"assets/images/new_footer/MY/mega888_grey.png\" /><img class=\"active\" src=\"assets/images/new_footer/MY/mega888.png\" />",
+    "22": "<img src=\"assets/images/new_footer/MY/tf_grey.png\" /><img class=\"active\" src=\"assets/images/new_footer/MY/tf.png\" />",
+    "23": "<img src=\"assets/images/new_footer/MY/inplay_grey.png\" /><img class=\"active\" src=\"assets/images/new_footer/MY/inplay.png\" />",
+    "": "",
+    "": ""
+  },
+  "mission_daily": {
+    "title": "Mission diary",
+    "coundown": "Coundown",
+    "spin_to_win": "SPIN TO WIN",
+    "claim_all": "CLAIM ALL",
+    "total_point": "Total <span>(Point):</span> ",
+    "helptext": "Reward must be claim within 24h after completion.",
+    "mission_completion": "Mission Completion:",
+    "last_update": "Last update",
+    "daily_login": "Daily Login",
+    "claim": "Claim",
+    "point": "Point",
+    "completed": "Completed",
+    "daily_member_deposit": "Daily Member Deposit",
+    "or_more": "OR MORE",
+    "start": "Start",
+    "yesterday_lost_amount": "Yesterday Lost Amount",
+    "congratulations": "Congratulations!",
+    "modal_title": "You have redeemed all the rewards!",
+    "modal_description": "For an elaborate breakdown of the reward, <br/> kindly visit to the <a href=\"\">Mission Record</a> page.",
+    "": "",
+    "": "",
+    "": ""
+  },
+  "spin_event": {
+    "event_icon": "<img src=\"assets/images/spin-event/spin.gif\" />",
+    "spin_available": "You have 0 spin(s) available",
+    "spin_wheel": "assets/images/spin-event/PC/Prize-Spin.png",
+    "winner_list": "Winner List",
+    "winning_recored": "Winning Recored",
+    "25_activity_point": "25 Activity Point",
+    "100_activity_point": "100 Activity Point",
+    "mystery_gift": "Mystery Gift",
+    "big_prize": "Big Prize (TESLA)",
+    "terms_title": "Terms & Conditions",
+    "content_1": "<b>Events: </b> Lucky Wheel Spin <br /> All member can participate in this event",
+    "content_2": "<b>Conditions: </b> <br/> 1. Member is required to have an accumulated deposit MYR 30 per day in order to participate in Lucky Wheel Spin. The deposit is calculate from 00:00 AM to 23:59 PM (GMT+8). If member does not spin it on the same day, it will be considered expired.",
+    "": "",
+    "": ""
+  },
+  "": "",
+  "": "",
   "": "",
   "": ""
 }

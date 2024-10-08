@@ -70,14 +70,23 @@
   border-bottom: 1px solid #2B2B2B;
   padding-bottom: 15px;
 }
-.footer__container__partner img {
-  max-width: 140px;
+.footer__container__partner > div img {
+  width: 140px;
   max-height: 40px;
   margin-bottom: 20px;
 }
-.footer__container__partner img:nth-child(17), .footer__container__partner img:nth-child(3) {
+.footer__container__partner > div img.active {
+  display: none;
+}
+.footer__container__partner > div img:nth-child(17), .footer__container__partner > div img:nth-child(3) {
   max-height: 25px;
 }
-.footer__container__partner img:nth-child(4) {
+.footer__container__partner > div img:nth-child(4) {
   max-height: 30px;
+}
+.footer__container__partner > div:hover img {
+  display: none !important;
+}
+.footer__container__partner > div:hover img.active {
+  display: block !important;
 }

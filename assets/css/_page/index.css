@@ -1288,16 +1288,25 @@
   border-bottom: 1px solid #2B2B2B;
   padding-bottom: 15px;
 }
-.footer__container__partner img {
-  max-width: 140px;
+.footer__container__partner > div img {
+  width: 140px;
   max-height: 40px;
   margin-bottom: 20px;
 }
-.footer__container__partner img:nth-child(17), .footer__container__partner img:nth-child(3) {
+.footer__container__partner > div img.active {
+  display: none;
+}
+.footer__container__partner > div img:nth-child(17), .footer__container__partner > div img:nth-child(3) {
   max-height: 25px;
 }
-.footer__container__partner img:nth-child(4) {
+.footer__container__partner > div img:nth-child(4) {
   max-height: 30px;
+}
+.footer__container__partner > div:hover img {
+  display: none !important;
+}
+.footer__container__partner > div:hover img.active {
+  display: block !important;
 }
 
 .home-page {
@@ -4343,7 +4352,6 @@ html[lang=zh] .fishing-page .sports-item__content__title[data-i18n="fishing_page
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   padding: 20px 15px;
-  height: 100%;
   color: #8590A6;
 }
 .account-layout__container__content__left .profile-navbar__navbar__avatar {
@@ -10998,4 +11006,386 @@ html[lang=en] .sponsor-leicester-item__content.ss2 .infoDetails {
 .blog-page .single-post-wrapper .blog-detail-content p {
   margin-bottom: 20px;
   line-height: 20px;
+}
+
+.daily-mission-page {
+  padding-top: 200px;
+}
+.daily-mission-page .title-img {
+  position: absolute;
+  right: 10px;
+  top: -89px;
+  z-index: 9;
+  width: 300px;
+}
+.daily-mission-page__content__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  margin-bottom: 30px;
+  text-transform: capitalize !important;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+.daily-mission-page__content__title span {
+  position: relative;
+}
+.daily-mission-page__content__title span::before {
+  content: " ";
+  position: absolute;
+  bottom: -12px;
+  left: 10px;
+  right: 10px;
+  height: 6px;
+  background: rgb(130, 185, 255);
+  background: linear-gradient(0deg, rgb(130, 185, 255) 0%, rgb(105, 212, 255) 100%);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.daily-mission-page__content .btn {
+  border: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.daily-mission-page__content .badge-time {
+  background-color: #d6f0fb;
+  padding: 2px 10px;
+  border-radius: 15px;
+  color: #999;
+  font-size: 12px;
+}
+.daily-mission-page__content .btn-spin,
+.daily-mission-page__content .btn-claimall {
+  padding: 3px 20px;
+  border-radius: 15px;
+  color: #fff;
+}
+.daily-mission-page__content .btn-spin:hover,
+.daily-mission-page__content .btn-claimall:hover {
+  opacity: 0.7;
+}
+.daily-mission-page__content .btn-spin {
+  background: rgb(138, 16, 188);
+  background: linear-gradient(100deg, rgb(138, 16, 188) 0%, rgb(234, 95, 240) 100%);
+  position: relative;
+  padding-left: 30px;
+}
+.daily-mission-page__content .btn-spin img {
+  position: absolute;
+  left: -20px;
+}
+.daily-mission-page__content .btn-claimall {
+  background: rgb(59, 237, 172);
+  background: linear-gradient(100deg, rgb(59, 237, 172) 0%, rgb(27, 253, 161) 100%);
+}
+.daily-mission-page__content .badge-total-point {
+  background-color: #f3f3f3;
+  padding: 5px 15px;
+  border-radius: 15px;
+}
+.daily-mission-page__content .badge-total-point span {
+  color: #7bb0ec;
+}
+.daily-mission-page__content .mission-item {
+  padding: 30px 30px 15px 30px;
+  border-radius: 12px;
+  background-color: #f3f3f3;
+  box-shadow: 0px -1px 12px 1px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0px -1px 12px 1px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0px -1px 12px 1px rgba(0, 0, 0, 0.1) inset;
+}
+.daily-mission-page__content .mission-item .title {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.daily-mission-page__content .mission-item .btn-start,
+.daily-mission-page__content .mission-item .btn-claim {
+  padding: 8px 20px;
+  border-radius: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.daily-mission-page__content .mission-item .btn-start:hover,
+.daily-mission-page__content .mission-item .btn-claim:hover {
+  opacity: 0.7;
+}
+.daily-mission-page__content .mission-item .btn-start {
+  background: rgb(52, 212, 217);
+  background: linear-gradient(100deg, rgb(52, 212, 217) 0%, rgb(213, 252, 156) 100%);
+  box-shadow: -1px -1px 10px 0px rgba(52, 212, 217, 0.75);
+  -webkit-box-shadow: -1px -1px 10px 0px rgba(52, 212, 217, 0.75);
+  -moz-box-shadow: -1px -1px 10px 0px rgba(52, 212, 217, 0.75);
+}
+.daily-mission-page__content .mission-item .btn-claim {
+  background: rgb(107, 210, 255);
+  background: linear-gradient(100deg, rgb(107, 210, 255) 0%, rgb(139, 176, 255) 100%);
+  box-shadow: -1px -1px 10px 0px rgba(107, 210, 255, 0.75);
+  -webkit-box-shadow: -1px -1px 10px 0px rgba(107, 210, 255, 0.75);
+  -moz-box-shadow: -1px -1px 10px 0px rgba(107, 210, 255, 0.75);
+}
+.daily-mission-page__content .mission-item .btn-claim:disabled {
+  background: #ddd;
+  box-shadow: -1px -1px 10px 0px #999;
+  -webkit-box-shadow: -1px -1px 10px 0px #999;
+  -moz-box-shadow: -1px -1px 10px 0px #999;
+}
+.daily-mission-page__content .mission-item .progress {
+  width: 200px;
+  height: 18px;
+  border-radius: 15px;
+  position: relative;
+  background: rgb(225, 222, 219);
+  background: linear-gradient(100deg, rgb(225, 222, 219) 0%, rgb(212, 208, 203) 100%);
+}
+.daily-mission-page__content .mission-item .progress .progress-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.daily-mission-page__content .mission-item .progress .progress-bar {
+  text-transform: uppercase;
+  background: rgb(107, 211, 255);
+  background: linear-gradient(100deg, rgb(107, 211, 255) 0%, rgb(139, 177, 255) 100%);
+}
+.daily-mission-page #dailyMissionModal .modal-content {
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+}
+.daily-mission-page #dailyMissionModal .modal-content a {
+  color: #7bb0ec;
+}
+.daily-mission-page #dailyMissionModal .modal-content .title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.spin-page {
+  background-size: cover;
+  background-image: url(../images/spin-event/PC/BG.png);
+}
+.spin-page .btn {
+  transition: 0.3s;
+}
+.spin-page .btn:hover {
+  opacity: 0.6;
+}
+.spin-page .spin-top {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/spin-event/PC/top-bg.png);
+  display: flex;
+  place-content: center;
+  place-items: center;
+  position: relative;
+}
+.spin-page .spin-top .frame {
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  margin: auto;
+  padding-bottom: 50px;
+}
+.spin-page .spin-top .frame .frame-img {
+  width: 650px;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3));
+}
+.spin-page .spin-top .frame .prize-spin {
+  position: absolute;
+  top: 35px;
+  width: 580px;
+}
+.spin-page .spin-top .frame .arrow {
+  position: absolute;
+  top: -28%;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  width: 100px;
+}
+.spin-page .spin-top .frame .spin-available {
+  color: #22aff2;
+  position: absolute;
+  font-size: 20px;
+  font-weight: 700;
+  bottom: 75px;
+}
+.spin-page .spin-top .frame .claim-point {
+  position: absolute;
+  bottom: 0;
+  width: 180px;
+  cursor: pointer;
+  right: 0;
+}
+.spin-page .leaderboard-img {
+  margin-bottom: -30px;
+  margin-top: -100px;
+}
+.spin-page .leaderboard {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: -1px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: -1px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: -1px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.spin-page .leaderboard .leaderboard-btn {
+  padding-top: 30px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.spin-page .leaderboard .leaderboard-btn .btn {
+  width: 100%;
+  border: none;
+  min-height: 50px;
+  box-shadow: -1px 4px 13px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: -1px 4px 13px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -1px 4px 13px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 3px solid #016df1;
+  background: rgb(33, 152, 255);
+  background: linear-gradient(0deg, rgb(33, 152, 255) 0%, rgb(55, 227, 234) 100%);
+}
+.spin-page .leaderboard .leaderboard-items {
+  height: 600px;
+  overflow-y: auto;
+}
+.spin-page .leaderboard .leaderboard-items .leaderboard-item {
+  color: #22aff2;
+  width: 100%;
+  font-size: 16px;
+  display: flex;
+  place-content: space-between;
+  place-items: flex-start;
+  margin-bottom: 20px;
+}
+.spin-page .terms {
+  margin-top: 50px;
+  box-shadow: -1px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: -1px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: -1px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 12px;
+  border: 1px solid #fff;
+}
+.spin-page .terms .terms-items {
+  background-color: #fff;
+  box-shadow: -1px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: -1px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: -1px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+  height: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  border: 1px solid rgba(33, 152, 255, 0.5);
+  min-height: 500px;
+}
+.spin-page .terms .terms-items .terms-title {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/spin-event/PC/T_C_title.png);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+}
+.spin-page .terms .terms-items .terms-content {
+  color: #3c84f6;
+  padding-top: 30px;
+  font-size: 16px;
+  line-height: 22px;
+}
+.spin-page .terms .terms-items .terms-content b {
+  font-weight: 700;
+}
+.spin-page .prizes {
+  margin-top: 20px;
+  box-shadow: -1px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: -1px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: -1px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 12px;
+  border: 1px solid #fff;
+}
+.spin-page .prizes .prizes-items {
+  background-color: #fff;
+  box-shadow: -1px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: -1px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: -1px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 20px 30px;
+  height: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+.spin-page .prizes .prizes-items > div .prizes-item {
+  margin-bottom: 30px;
+  position: relative;
+  padding: 15px;
+}
+.spin-page .prizes .prizes-items > div .prizes-item .icon {
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  width: 60px;
+}
+.spin-page .prizes .prizes-items > div .prizes-item .img {
+  border-radius: 10px;
+  border-bottom: 8px solid #36dde8;
+  background: rgb(33, 152, 255);
+  background: linear-gradient(0deg, rgb(33, 152, 255) 0%, rgb(55, 227, 234) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+}
+.spin-page .prizes .prizes-items > div .prizes-item .img img {
+  width: 80%;
+  margin: auto;
+}
+.spin-page .prizes .prizes-items > div .prizes-item .btn {
+  width: 100%;
+  border: none;
+  min-height: 45px;
+  margin-top: 10px;
+  font-size: 18px;
+  box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 5px solid #36dde8;
+  background: rgb(33, 152, 255);
+  background: linear-gradient(0deg, rgb(33, 152, 255) 0%, rgb(55, 227, 234) 100%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

@@ -86,20 +86,38 @@
       border-bottom: 1px solid #2B2B2B;
       padding-bottom: 15px;
 
-      img {
-        max-width: 140px;
-        max-height: 40px;
-        margin-bottom: 20px;
+      &>div {
 
-        &:nth-child(17),
-        &:nth-child(3) {
-          max-height: 25px;
+        img {
+          width: 140px;
+          max-height: 40px;
+          margin-bottom: 20px;
+
+          &.active {
+            display: none;
+          }
+
+          &:nth-child(17),
+          &:nth-child(3) {
+            max-height: 25px;
+          }
+
+          &:nth-child(4) {
+            max-height: 30px;
+          }
         }
 
-        &:nth-child(4) {
-          max-height: 30px;
+        &:hover {
+          img {
+            display: none !important;
+
+            &.active {
+              display: block !important;
+            }
+          }
         }
       }
+
     }
   }
 }
