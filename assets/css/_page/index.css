@@ -11181,6 +11181,7 @@ html[lang=en] .sponsor-leicester-item__content.ss2 .infoDetails {
 }
 .spin-page .spin-top {
   height: 100vh;
+  min-height: 800px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11199,17 +11200,17 @@ html[lang=en] .sponsor-leicester-item__content.ss2 .infoDetails {
   padding-bottom: 50px;
 }
 .spin-page .spin-top .frame .frame-img {
-  width: 650px;
+  width: 550px;
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3));
 }
 .spin-page .spin-top .frame .prize-spin {
   position: absolute;
-  top: 35px;
-  width: 580px;
+  top: 30px;
+  width: 490px;
 }
 .spin-page .spin-top .frame .arrow {
   position: absolute;
-  top: -28%;
+  top: -30%;
   bottom: 0;
   margin: auto;
   cursor: pointer;
@@ -11218,16 +11219,16 @@ html[lang=en] .sponsor-leicester-item__content.ss2 .infoDetails {
 .spin-page .spin-top .frame .spin-available {
   color: #22aff2;
   position: absolute;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
-  bottom: 75px;
+  bottom: 72px;
 }
 .spin-page .spin-top .frame .claim-point {
   position: absolute;
-  bottom: 0;
-  width: 180px;
+  bottom: 20px;
+  width: 140px;
   cursor: pointer;
-  right: 0;
+  right: 10px;
 }
 .spin-page .leaderboard-img {
   margin-bottom: -30px;
