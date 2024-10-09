@@ -2195,6 +2195,7 @@
     "terms_title": "条款与条件",
     "content_1": "<b>活动: </b> 幸运大转盘 <br /> 所有会员均可参加此活动。",
     "content_2": "<b>条件: </b> <br/> 1. 会员每天需累计存款 30 马币才能参与幸运转盘旋转。存款计算时间为 00:00 AM 至 23:59 PM (GMT+8)。如果会员当天没有旋转，则视为已过期。",
+    "claim_point": "assets/images/spin-event/PC/Claim-point.png",
     "": "",
     "": ""
   },
