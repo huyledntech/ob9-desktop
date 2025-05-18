@@ -29,8 +29,8 @@ var translator = new Translator({
   registerGlobally: "__",
   persist: true,
   persistKey: "preferred_language",
-  filesLocation: "assets/i18n",
-  // filesLocation: "https://raw.githubusercontent.com/huyleit43/ob9-desktop/main/assets/i18n",
+  // filesLocation: "assets/i18n",
+  filesLocation: "https://raw.githubusercontent.com/huyledntech/ob9-desktop/main/assets/i18n",
 });
 
 const PREFERED_REGION = "preferred_region";
@@ -967,3 +967,16 @@ $(".spin-page .spin-top .arrow").on("click", function () {
     transform: "rotate(" + degree + "deg)",
   });
 });
+
+const btnContentInfoSeeMore = $('.content-info .btn-seemore');
+const contentInfoSeeMoreContent = $('.content-info .content-info__content');
+if (btnContentInfoSeeMore.length > 0) {
+  btnContentInfoSeeMore.on('click', function () {
+    contentInfoSeeMoreContent.toggleClass('limit-line');
+    if (contentInfoSeeMoreContent.hasClass('limit-line')) {
+      btnContentInfoSeeMore.text('See more');
+    } else {
+      btnContentInfoSeeMore.text('See less');
+    }
+  });
+}

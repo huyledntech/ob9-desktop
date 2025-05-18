@@ -756,3 +756,51 @@ html[lang=zh] .register_link span {
 .max-w-200px {
   max-width: 200px;
 }
+
+.content-info {
+  background-color: #fff;
+  background-image: url(../images/info-bg.jpeg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+}
+.content-info__content {
+  padding: 30px 0;
+  color: #7981a4 !important;
+  font-size: var(--default-font-size) !important;
+  font-family: "Roboto", sans-serif !important;
+  line-height: 20px !important;
+}
+.content-info__content.limit-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 20;
+  line-clamp: 20;
+  -webkit-box-orient: vertical;
+}
+.content-info__content h1 {
+  margin-bottom: 30px !important;
+}
+.content-info__content p,
+.content-info__content span,
+.content-info__content h1,
+.content-info__content h2,
+.content-info__content h3,
+.content-info__content h4,
+.content-info__content h5,
+.content-info__content h6 {
+  color: #7981a4 !important;
+}
+.content-info__content a {
+  color: #4080FF !important;
+}
+.content-info__content a span {
+  color: #4080FF !important;
+}
+
+html[lang=zh] .content-info {
+  display: none !important;
+}

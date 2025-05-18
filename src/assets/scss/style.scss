@@ -25,19 +25,19 @@
       -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
       background-color: #F5F5F5;
     }
-  
+
     &::-webkit-scrollbar {
       transition: all 0.5s;
-  
+
       &:hover {
         background-color: #F5F5F5;
       }
     }
-  
+
     &::-webkit-scrollbar-thumb {
       -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, .3);
       background-color: #aaa;
-  
+
       &:hover {
         background-color: #999;
       }
@@ -934,4 +934,60 @@ html[lang="zh"] {
 
 .max-w-200px {
   max-width: 200px;
+}
+
+.content-info {
+  background-color: #fff;
+  background-image: url(../images/info-bg.jpeg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+
+  &__content {
+    padding: 30px 0;
+    color: #7981a4 !important;
+    font-size: var(--default-font-size) !important;
+    font-family: "Roboto", sans-serif !important;
+    line-height: 20px !important;
+
+    &.limit-line {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 20;
+      line-clamp: 20;
+      -webkit-box-orient: vertical;
+    }
+
+    h1 {
+      margin-bottom: 30px !important;
+    }
+
+    p,
+    span,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #7981a4 !important;
+    }
+
+    a {
+      color: #4080FF !important;
+
+      span {
+        color: #4080FF !important;
+      }
+    }
+  }
+}
+
+html[lang="zh"] {
+  .content-info {
+    display: none !important;
+  }
 }
