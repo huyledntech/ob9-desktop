@@ -983,6 +983,44 @@ html[lang="zh"] {
         color: #4080FF !important;
       }
     }
+
+    table {
+      margin-bottom: 20px !important;
+      border-collapse: collapse !important;
+
+      tbody {
+        tr {
+          td {
+            padding: 10px 15px !important;
+            border: 1px solid #fff !important;
+            // background-color: #f9faff !important;
+
+            p {
+              margin-bottom: 0 !important;
+
+              span {
+                // color: #333 !important;
+              }
+            }
+          }
+
+          &:first-child {
+            td {
+              background-color: #5e79e8 !important;
+              color: #fff !important;
+
+              p {
+                color: #fff !important;
+
+                span {
+                  color: #fff !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 

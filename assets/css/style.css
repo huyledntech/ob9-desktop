@@ -800,6 +800,27 @@ html[lang=zh] .register_link span {
 .content-info__content a span {
   color: #4080FF !important;
 }
+.content-info__content table {
+  margin-bottom: 20px !important;
+  border-collapse: collapse !important;
+}
+.content-info__content table tbody tr td {
+  padding: 10px 15px !important;
+  border: 1px solid #fff !important;
+}
+.content-info__content table tbody tr td p {
+  margin-bottom: 0 !important;
+}
+.content-info__content table tbody tr:first-child td {
+  background-color: #5e79e8 !important;
+  color: #fff !important;
+}
+.content-info__content table tbody tr:first-child td p {
+  color: #fff !important;
+}
+.content-info__content table tbody tr:first-child td p span {
+  color: #fff !important;
+}
 
 html[lang=zh] .content-info {
   display: none !important;
