@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Referral', metaContent: './meta/home.html'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main new-page referral-page">
+      @@include('../components/base/navbar.html', {active: 1})
+
+      @@include('../components/referral/index.html')
+      
+      <!-- content -->
+      @@include('../components/home/home-help.html')
+
+      @@include('../components/event-icon.html')
+      
+    </section>
+    @@include('../components/base/content-info.html', { contentInfo: './content-info/home.html'})
+
+    
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+    
+    @@include('../components/base/footer-info.html', { contentInfo: './footer-info/home.html'})
+    @@include('../components/base/footer.html')
+
+  </body>
+</html>
