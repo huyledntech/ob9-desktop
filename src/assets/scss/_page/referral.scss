@@ -5,6 +5,12 @@
     color: #7981A4;
   }
 
+  .text-gray-gradient {
+    background: linear-gradient(to right, #000 10%, #7981A4 50%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   .fs-05 {
     font-size: 48px;
   }
@@ -21,6 +27,10 @@
 
   .bg-gradient1 {
     background: linear-gradient(90deg, #4884EE 0%, #06BCFB 100%);
+  }
+
+  .bg-gradient2 {
+    background: linear-gradient(134.37deg, #C2E2FF 0%, #F0F6FF 100%);
   }
 
   .border-top-radius-none {
@@ -51,6 +61,10 @@
     background-color: #D1D5F5;
   }
 
+  .bg-gradient2 {
+    background: linear-gradient(134.37deg, #C2E2FF 0%, #F0F6FF 100%);
+  }
+
   .section-title {
     background: linear-gradient(0deg, #208CFF 0%, #05C3FD 100%);
     -webkit-background-clip: text;
@@ -59,7 +73,7 @@
     line-height: 140%;
     font-weight: 900;
     text-transform: uppercase;
-    filter: drop-shadow(3px 3px 1px #7F88B599);
+    filter: drop-shadow(2px 2px 1px #7F88B599);
   }
 
   .relative {
@@ -74,9 +88,36 @@
     gap: 4rem !important;
   }
 
+  .zoom-effect-container {
+    overflow: hidden;
+
+    .zoom-effect {
+      transition: transform 300ms ease, box-shadow 300ms ease;
+      transform-origin: center center;
+      will-change: transform;
+      transform: translateZ(0);
+    }
+
+    &:hover {
+      .zoom-effect {
+        transform: scale(1.08);
+        z-index: 2;
+      }
+    }
+
+  }
+
   button {
+    transition: transform 300ms ease, box-shadow 300ms ease;
+    transform-origin: center center;
+    will-change: transform;
+    transform: translateZ(0);
+
     &:hover {
       opacity: 0.8;
+      transform: scale(1.02);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+      z-index: 2;
     }
   }
 
@@ -97,7 +138,14 @@
     gap: 5px;
     text-transform: uppercase;
 
-    .has-icon {
+    &.bg-white {
+      background-image: none;
+      background-color: #fff;
+      color: #7981A4;
+      line-height: 20px;
+    }
+
+    &.has-icon {
       &::before {
         content: "";
         display: block;
@@ -113,11 +161,17 @@
 
   .input-group {
     min-width: 380px;
+    border: 1px solid #D1D5F5;
+    border-radius: 15px;
+
+    &.width-auto {
+      min-width: auto !important;
+    }
 
     .form-control {
-      border: 1px solid #D1D5F5;
+      border: none;
       border-radius: 15px;
-      padding: 16px;
+      padding: 16px 10px;
       border-right: 0;
 
       &::placeholder {
@@ -126,6 +180,9 @@
     }
 
     .input-group-text {
+      background-color: #fff;
+      border-radius: 15px;
+      border: none;
       border-top-right-radius: 16px;
       border-bottom-right-radius: 16px;
     }
@@ -222,6 +279,14 @@
         }
       }
     }
+  }
+
+  .z-1 {
+    z-index: 1;
+  }
+
+  .border-none {
+    border: none !important;
   }
 
 }
