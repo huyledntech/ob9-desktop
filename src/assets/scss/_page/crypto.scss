@@ -21,20 +21,6 @@
     }
   }
 
-  .line-horizontal {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    height: 5px;
-    border-radius: 10px;
-    background: transparent;
-    z-index: 1;
-    border: 1px solid rgba(1, 188, 255, 0.5);
-    // border-image-source: linear-gradient(90deg, rgba(64, 128, 255, 0.5) 0%, rgba(1, 188, 255, 0.5) 100%);
-    // border-image-slice: 1;
-  }
-
   .accordion-custom {
     display: flex;
     flex-direction: column;

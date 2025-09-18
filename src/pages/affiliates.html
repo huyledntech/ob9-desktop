@@ -4,16 +4,18 @@
   <body>
     
     <!-- Content -->
-    <section class="main home-page">
+    <section class="main new-page affiliates-page">
       @@include('../components/base/navbar.html', {active: 1})
 
-      <div>Affiliates</div>
+      @@include('../components/affiliates/index.html')
+
       <!-- content -->
       @@include('../components/home/home-help.html')
 
       @@include('../components/event-icon.html')
 
       <!-- MODAL -->
+      @@include('../components/crypto/contact-modal.html')
       <!-- @@include('../components/home/customer-annoucement.html') -->
       <!-- @@include('../components/home/customer-annoucement-image.html') -->
       <!-- MODAL -->
