@@ -16,7 +16,7 @@
             <div class="text-gray" data-i18n="referral_page.Invitation_bonus_up_to"></div>
             <div class="fw-bold fs-2">MYR 2,000</div>
             <div class="bg-gradient1 pt-3 pb-3 card-base text-white border-bottom-radius-none w-100" style="margin-bottom: -1px;">
-              <img src="assets/icons/newinfo.svg" />
+              <img role="button" src="assets/icons/newinfo.svg" data-bs-toggle="modal" data-bs-target="#inviteModal"/>
               <span data-i18n="referral_page.Per_Head"></span>
             </div>
           </div>
@@ -24,7 +24,7 @@
             <div class="text-gray" data-i18n="referral_page.Commission_Earnings"></div>
             <div class="fw-bold fs-2">0.2%</div>
             <div class="bg-gradient1 pt-3 pb-3 card-base text-white border-bottom-radius-none w-100" style="margin-bottom: -1px;">
-              <img src="assets/icons/newinfo.svg" />
+              <img role="button" src="assets/icons/newinfo.svg" data-bs-toggle="modal" data-bs-target="#earningsModal"/>
               <span data-i18n="referral_page.Unlimited"></span>
             </div>
           </div>
@@ -41,25 +41,25 @@
           </div>
         </div>
         <div class="card-base bg-white mt-4 mb-4 d-flex justify-content-start align-items-center gap-3 flex-column">
-          <div class="text-gray" data-i18n="referral_page.Total_Referral_Bonus_Earned"></div>
+          <div class="text-gray" data-i18n="referral_page.Total_earnings"></div>
           <div class="text-gradient lh-base fs-3 fw-bold">MYR 15.504,32</div>
           <div class="w-100">
-            <div class="d-flex justify-content-between align-items-center gap-4 border-bottom pb-3 mb-3 w-100">
-              <div class="text-gray" data-i18n="referral_page.Total_Referrals_weekly_turnover"></div>
-              <div class="fw-bold">MYR 42,249.98</div>
-            </div>
             <div class="d-flex justify-content-between align-items-center gap-4 pb-3 mb-3 w-100">
-              <div class="text-gray" data-i18n="referral_page.Monthly_Successful_Referrals_deposit"></div>
+              <div class="text-gray" data-i18n="referral_page.referrals_bonus"></div>
+              <div class="fw-bold">MYR 24,463</div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center gap-4 pb-3 mb-3 w-100 border-bottom">
+              <div class="text-gray" data-i18n="referral_page.referrals_commission"></div>
               <div class="fw-bold">MYR 32,551.4</div>
             </div>
             <div class="d-flex justify-content-between align-items-center gap-4 pb-3 mb-3 w-100">
-              <div class="text-gray" data-i18n="referral_page.Last_month_Successful_referral_deposit"></div>
-              <div class="fw-bold">MYR 24,463</div>
+              <div class="text-gray" data-i18n="referral_page.Total_Referrals_weekly_turnover"></div>
+              <div class="fw-bold">MYR 42,249.98</div>
             </div>
           </div>
-          <div class="progress bg-gray1 w-100 border-radius-16 h-30">
+          <!-- <div class="progress bg-gray1 w-100 border-radius-16 h-30">
             <div class="progress-bar bg-gradient1 border-radius-16" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">8/10</div>
-          </div>
+          </div> -->
           <div class="text-center my-2">
             <div class="fw-bold mb-2" data-i18n="referral_page.Referral_history"></div>
             <div class="text-gray fst-italic" data-i18n="referral_page.1st_deposit_MYR_100_above"></div>
@@ -130,8 +130,8 @@
         <div>
           <div class="input-group">
             <input type="text" class="form-control" data-i18n="referral_page.Member_ID" data-i18n-attr="placeholder" placeholder="" aria-label="Username" aria-describedby="basic-addon1" />
-            <span class="input-group-text bg-white" id="basic-addon1">
-              <img src="assets/icons/search.svg" />
+            <span class="input-group-text bg-white" id="basic-addon1" data-bs-toggle="modal" data-bs-target="#searchModal" role="button">
+              <img src="assets/icons/search.svg"/>
             </span>
           </div>
         </div>
@@ -269,7 +269,7 @@
         <div>
           <div class="input-group">
             <input type="text" class="form-control" data-i18n="referral_page.Member_ID" data-i18n-attr="placeholder" placeholder="" aria-label="Username" aria-describedby="basic-addon1" />
-            <span class="input-group-text bg-white" id="basic-addon1">
+            <span class="input-group-text bg-white" id="basic-addon1" data-bs-toggle="modal" data-bs-target="#searchModal" role="button">
               <img src="assets/icons/search.svg" />
             </span>
           </div>
