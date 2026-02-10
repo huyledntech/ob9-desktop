@@ -980,3 +980,13 @@ if (btnContentInfoSeeMore.length > 0) {
     }
   });
 }
+
+$('#realbet-icon').on('click', function () {
+  $('#realbet-popup').addClass('active');
+  $('#realbet-icon').addClass('hide');
+});
+
+$('#realbet-show-icon').on('click', function () {
+  $('#realbet-popup').removeClass('active');
+  $('#realbet-icon').removeClass('hide');
+});
