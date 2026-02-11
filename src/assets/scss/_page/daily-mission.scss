@@ -105,6 +105,17 @@
       -webkit-box-shadow: 0px -1px 12px 1px rgba(0, 0, 0, 0.1) inset;
       -moz-box-shadow: 0px -1px 12px 1px rgba(0, 0, 0, 0.1) inset;
 
+      .icon {
+        width: 60px;
+        height: 60px;
+        img {
+          max-width: 60px;
+          max-height: 60px;
+          object-fit: contain;
+          margin: auto;
+        }
+      }
+
       .title {
         font-size: 16px;
         margin-bottom: 10px;
