@@ -565,14 +565,15 @@
   margin-right: auto;
 }
 .home-page__realbet__popup .trophy {
-  width: 90px;
-  margin: 20px auto;
+  width: 120px;
+  margin: 0 auto;
 }
 .home-page__realbet__popup .stats-box {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   padding: 15px 10px;
   color: #000;
+  background-color: #fff;
 }
 .home-page__realbet__popup .stats-row {
   display: flex;
