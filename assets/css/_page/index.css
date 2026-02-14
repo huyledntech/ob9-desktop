@@ -1413,7 +1413,7 @@
   flex-direction: column;
   width: 90px;
 }
-.home-page__right-button a {
+.home-page__right-button > a {
   transition: 0.5s;
   width: 70px;
   max-height: 80px;
@@ -1432,10 +1432,10 @@
   text-align: center;
   color: #597EF7;
 }
-.home-page__right-button a img {
+.home-page__right-button > a img {
   max-width: 38px;
 }
-.home-page__right-button a:hover {
+.home-page__right-button > a:hover {
   background: linear-gradient(90deg, #8EA9FF 0%, #678BFF 32.29%, #557BF7 100%);
   width: 90px;
   color: #FFFFFF;
@@ -1822,10 +1822,9 @@
   transform: scale(1.05, 1.05);
 }
 .home-page__realbet__icon {
-  position: fixed;
-  bottom: 20%;
-  right: 0;
+  margin-right: -10px;
   z-index: 999;
+  text-align: right;
 }
 .home-page__realbet__icon.hide {
   display: none;
@@ -1834,38 +1833,49 @@
   width: 100px;
 }
 .home-page__realbet__popup {
-  position: fixed;
-  bottom: 10%;
-  right: 15px;
   z-index: 999;
-  opacity: 0;
-  margin-right: -100%;
-  transition: all 0.5s;
+  width: 220px;
+  position: absolute;
+  right: -400px;
+  overflow: hidden;
+  margin-right: -500px;
+  transition: all 0.2s;
   -webkit-box-shadow: 1px 4px 2px 2px #1B4ED8;
   box-shadow: 1px 4px 2px 2px #1B4ED8;
   border-radius: 20px;
 }
 .home-page__realbet__popup.active {
+  position: relative;
+  right: 0;
   opacity: 1;
-  margin-right: 0;
+  margin-right: 4px;
+  overflow: visible;
 }
 .home-page__realbet__popup .challenge-card {
   color: white;
   text-align: center;
   position: relative;
   border-radius: 20px;
+  display: block;
+}
+.home-page__realbet__popup .challenge-card #realbet-show-icon {
+  background: linear-gradient(180deg, #177ee6, #2445b7);
+  position: absolute;
+  top: 25px;
+  left: -15px;
+  width: 15px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 .home-page__realbet__popup .challenge-card__header {
   background: linear-gradient(180deg, #177ee6, #2445b7);
   padding: 15px 10px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-}
-.home-page__realbet__popup .challenge-card .show-icon {
-  position: absolute;
-  top: 25px;
-  left: -20px;
-  width: 20px;
 }
 .home-page__realbet__popup .challenge-title {
   font-size: 24px;
